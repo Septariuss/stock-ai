@@ -2167,7 +2167,7 @@ export default function App() {
               stroke="rgba(59,130,246,0.06)"
               vertical={false}
             />
-            <Tooltip content={<ChartTooltip />} />
+            <Tooltip content={(props: any) => <ChartTooltip {...props} />} />
             <Area
               type="monotone"
               dataKey="val"
